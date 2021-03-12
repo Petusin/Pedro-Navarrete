@@ -6,7 +6,7 @@ public class Calculadora {
 
 	public static void main(String[] args) 
 	{
-		//declaromos las variables
+		//declaromos la variables
 		
 		int numero1=0;
 		int numero2=0;
