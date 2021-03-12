@@ -38,11 +38,11 @@ public class Calculadora {
 				case '%': result = (float) ((numero1*100)/numero2);
 				break;
 		
+		
 		}
 		
 		//Mostramos la salida de la calculadora
 		System.out.println(numero1+" "+operador+" "+numero2+" = "+result);
-		
 	}
 
 }
