@@ -12,6 +12,7 @@ public class Calculadora {
 		int numero2=0;
 		char operador;
 		double result = 0.0;
+				
 
 		//iniciamos el metodo utilizando Scanner
 		Scanner scanObject = new Scanner(System.in);
@@ -21,7 +22,7 @@ public class Calculadora {
 		numero1 = scanObject.nextInt();
 		System.out.println("Entra el segundo numero");
 		numero2 = scanObject.nextInt();
-		System.out.println("¿que operacion quieres hacer +,-,*,/?");
+		System.out.println("¿que operacion quieres hacer +,-,*,/;%?");
 		operador = scanObject.next().charAt(0);
 		
 		//Instruccion switch que recibe la variable del operador.
@@ -33,6 +34,8 @@ public class Calculadora {
 				case '*': result = numero1 * numero2;
 				break;
 				case '/': result = numero1 / numero2;
+				break;
+				case '%': result = (float) ((numero1*100)/numero2);
 				break;
 		
 		}
