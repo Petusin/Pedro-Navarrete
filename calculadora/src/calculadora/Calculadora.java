@@ -1,5 +1,5 @@
 package calculadora;
-
+//esta es con metodos
 import java.util.Scanner;
 
 public class Calculadora {
