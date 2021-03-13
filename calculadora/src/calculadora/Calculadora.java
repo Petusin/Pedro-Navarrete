@@ -1,48 +1,17 @@
 package calculadora;
-//esta es con metodo
-import java.util.Scanner;
 
-public class Calculadora {
+public static void main(String[] args) {
+    Scanner scanner = new Scanner(System.in);
 
-	public static void main(String[] args) 
-	{
-		//declaromos las variables
-		
-		int numero1=0;
-		int numero2=0;
-		char operador;
-		double result = 0.0;
-				
+    System.out.print("Enter the first number: ");
+    int number1 = Integer.valueOf(scanner.nextLine());
 
-		//iniciamos el metodo utilizando Scanner
-		Scanner scanObject = new Scanner(System.in);
-		
-		//solicitamos entradas y asignamos los valores
-		System.out.println("Entra el primer numero");
-		numero1 = scanObject.nextInt();
-		System.out.println("Entra el segundo numero");
-		numero2 = scanObject.nextInt();
-		System.out.println("¿que operacion quieres hacer +,-,*,/;%?");
-		operador = scanObject.next().charAt(0);
-		
-		//Instruccion switch que recibe la variable del operador.
-		switch (operador) {
-				case '+': result = numero1 + numero2;
-				break;
-				case '-': result = numero1 - numero2;
-				break;
-				case '*': result = numero1 * numero2;
-				break;
-				case '/': result = numero1 / numero2;
-				break;
-				case '%': result = (float) ((numero1*100)/numero2);
-				break;
-		
-		
-		}
-		
-		//Mostramos la salida de la calculadora
-		System.out.println(numero1+" "+operador+" "+numero2+" = "+result);
-	}
+    System.out.print("Enter the second number: ");
+    int number2 = Integer.valueOf(scanner.nextLine());
 
+    System.out.print("The total sum of the numbers is: " + sum(number1, number2));
+}
+
+public static int sum(int first, int second) {
+    return first + second;
 }
